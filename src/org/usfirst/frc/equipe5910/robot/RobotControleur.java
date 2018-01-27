@@ -1,6 +1,7 @@
 package org.usfirst.frc.equipe5910.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.VictorSP;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -10,6 +11,12 @@ import edu.wpi.first.wpilibj.IterativeRobot;
  * directory.
  */
 public class RobotControleur extends IterativeRobot {
+	
+	int ROUE_AVANT_DROIT = 13; // SP 3 	// PWM Outputs
+	
+    // SP pour Speed Controller
+    // http://wpilib.screenstepslive.com/s/4485/m/13809/l/599702-driving-motors-with-speed-controller-objects-victors-talons-and-jaguars 
+	VictorSP roueAvantDroite; 
 
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -19,6 +26,8 @@ public class RobotControleur extends IterativeRobot {
 	@Override
 	public void robotInit() {
 		System.out.println("robotInit()");
+		http://first.wpi.edu/FRC/roborio/beta/docs/java/edu/wpi/first/wpilibj/VictorSP.html
+		roueAvantDroite = new VictorSP(ROUE_AVANT_DROIT);
 	}
 
 	/**
@@ -44,6 +53,7 @@ public class RobotControleur extends IterativeRobot {
 	@Override
 	public void teleopInit() {
 		System.out.println("teleopInit()");
+		this.roueAvantDroite.set(0);
 	}
 
 	/**
@@ -52,6 +62,7 @@ public class RobotControleur extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() {
 		System.out.println("teleopPeriodic()");
+		this.roueAvantDroite.set(1);		
 	}
 
 	/**
