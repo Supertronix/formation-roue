@@ -18,6 +18,8 @@ public class RobotControleur extends IterativeRobot {
     // http://wpilib.screenstepslive.com/s/4485/m/13809/l/599702-driving-motors-with-speed-controller-objects-victors-talons-and-jaguars 
 	VictorSP roueAvantDroite; 
 
+	
+	
 	/**
 	 * This function is run when the robot is first started up and should be
 	 * used for any initialization code.
