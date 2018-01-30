@@ -3,7 +3,7 @@
 <project name="athena-project-build" default="deploy">
 	  <property file="wpilib.properties"/>
 	  <property file="build.properties"/>
-	  <property file="${user.home}/wpilib/java/${version}/ant/build.properties"/>
+	  <property file="ant-build.properties"/>
   <property file="${user.home}/wpilib/java/${version}/ant/ni_image.properties"/>
 
   <!-- Load Tasks -->
