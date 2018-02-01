@@ -75,9 +75,10 @@
 	<path id="classpath.path">
 		<!--fileset dir="${userLibs.dir}" includes="*.jar"/-->
 		<fileset file="lib/WPILib.jar"/>
-		<fileset file="lib/NetworkTables.jar"/>
 		<fileset file="lib/opencv.jar"/>
 		<fileset file="lib/cscore.jar"/>
+		<fileset file="lib/wpiutil.jar"/>
+		<fileset file="lib/ntcore.jar"/>
 		<fileset dir="${userLibs}" erroronmissingdir="false"/>
 	</path>
 
